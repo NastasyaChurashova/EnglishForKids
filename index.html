@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ENGLISH_for_KIDS</title>
+		<link href="styles.css" rel="stylesheet" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<script type="module" src="functionality.js" defer></script>
+	<body style="background-color: white">
+		<audio class="audio-correct"><source src="./assets/pronounciation/correct_sound.mp3" type="audio/mp3" /></audio>
+		<audio class="audio-wrong"><source src="./assets/pronounciation/wrong_sound.mp3" type="audio/mp3" /></audio>
+		<header>
+			<!-----------MODE SWITCHER  -->
+			<div class="switch-container">
+				<div></div>
+				<a href="#" class="train-link"><span>TRAIN</span></a>
+				<label class="switchLabel">
+					<input class="switch" type="checkbox" />
+					<span class="slider round"></span>
+				</label>
+				<a href="#" class="play-link"><span>PLAY</span></a>
+			</div>
+		</header>
+		<main>
+			<div class="container"></div>
+
+			<div class="play_mode--active">
+				<button class="start-game" type="button">
+          <div class="round-button-circle">
+            <span class="round-button">START</span>
+          </div>
+        </button>
+			</div>
+			<!-- NAVBAR -->
+			<input type="checkbox" class="toggler" />
+			<div class="hamburger"><div></div></div>
+			<div class="menu">
+				<div>
+					<ul>
+						<li><a href="#" class="main-link">MAIN</a></li>
+						<li>
+							<a href="#">CATEGORY</a>
+							<ul>
+								<li><a href="#" class="nav-link" aria-current="page"> Fruits </a></li>
+								<li><a href="#" class="nav-link" aria-current="page"> Vegetables </a></li>
+								<li><a href="#" class="nav-link" aria-current="page"> Home Animals </a></li>
+								<li><a href="#" class="nav-link" aria-current="page"> Wild Animals </a></li>
+								<li><a href="#" class="nav-link" aria-current="page"> Clothes </a></li>
+								<li><a href="#" class="nav-link" aria-current="page"> Food </a></li>
+								<li><a href="#" class="nav-link" aria-current="page"> Professions </a></li>
+								<li><a href="#" class="nav-link" aria-current="page"> Weather </a></li>
+							</ul>
+						</li>
+						<li><a href="#">STATISTICS</a></li>
+					</ul>
+				</div>
+			</div>
+		</main>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+			integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
