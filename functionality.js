@@ -5,6 +5,7 @@ const switcher = document.querySelector(".switch");
 const startBtn = document.querySelector(".start-game");
 const correctSound = document.querySelector(".audio-correct");
 const wrongSound = document.querySelector(".audio-wrong");
+const statisticsLink = document.querySelector(".statistics-link");
 
 // 	GLOBAL VARIABLES
 
@@ -21,7 +22,7 @@ const getCardTemplate = (card, type) => `
     ${
 			mode === "play"
 				? ""
-				: `<img src="/nastasyachurashova-JSFELT/assets/flip_btn.png" class="flip_btn" alt="flip">
+				: `<img src="./assets/flip_btn.png" class="flip_btn" alt="flip">
         <span class="cardNameSpan">${card.cardName}</span>`
 		}
         <i class="fruit"></i>
@@ -29,7 +30,7 @@ const getCardTemplate = (card, type) => `
     <div class="back">
       <img src=${card.img} >
       <span class="cardNameSpan">${card.cardNameRu}</span>
-      <img src="/nastasyachurashova-JSFELT/assets/flip_btn.png" class="flip_btn" alt="flip">
+      <img src="./assets/flip_btn.png" class="flip_btn" alt="flip">
       </div>
     </div>
   </div>
@@ -77,6 +78,11 @@ const renderCards = (category, mode) => {
 	if (mode === "play") {
 		allCards.forEach((cardEl) => {
 			cardEl.addEventListener("click", (e) => {
+
+const clickedCard = cardsData[category.toLowerCase()].find(el=> el.cardName === cardEl.id)
+				console.log("clicjedCard datra", clickedCard)
+		clickedCard.attempts = clickedCard.attempts + 1
+
 				if (selectedCardEl.id === cardEl.id) {
 					// CORRECT ANSWER
 					correctSound.play();
@@ -92,6 +98,12 @@ const renderCards = (category, mode) => {
 		allCards.forEach((cardEl) => addFlipAndAudioEvents(cardEl));
 	}
 };
+
+	const renderTable = () => {
+		container.innerHTML = "";
+		tableCreate()
+	}
+
 
 const categoryNames = document.querySelectorAll(".nav-link");
 categoryNames.forEach((el) => {
@@ -120,6 +132,8 @@ switcher.addEventListener("change", (e) => {
 	if (e.target.checked) {
 		startBtn.style.display = "block";
 		mode = "play";
+		const span = startBtn.querySelector(".round-button")
+		span.textContent = "Start"
 		renderCards(currentCategory);
 	} else {
 		mode = "train";
@@ -140,53 +154,82 @@ const playRandomSound = () => {
 	const audio = selectedCardEl.querySelector(".audio");
 
 	audio.play();
+
 };
 
 startBtn.addEventListener("click", () => {
 	renderCards(currentCategory, "play");
-	playRandomSound();
+
+	const span = startBtn.querySelector(".round-button")
+
+	if(	span.textContent === "Repeat"){
+		const audio = selectedCardEl.querySelector(".audio");
+		console.log("audi?", audio)
+		audio.play();
+
+	} else {
+		span.textContent = "Repeat"
+		playRandomSound();
+	}
+
 });
+
+statisticsLink.addEventListener("click", renderTable)
 
 renderCards("Home Animals");
 
 //  STATISTICS TABLE------START
 
-// function tableCreate() {
-// 	const body = document.body,
-// 		tbl = document.createElement("table");
-// 	tbl.style.width = "1000px";
-// 	tbl.style.border = "1px solid black";
-// 	for (let i = 0; i < 64; i++) {
-// 		const tr = tbl.insertRow();
-// 		tr.style.border = "1px solid black";
+function tableCreate() {
+	const body = document.body,
+		tbl = document.createElement("table");
+	tbl.innerHTML =
+		"<thead><tr><th>Category</th><th>Word</th><th>Translation</th><th>Attempts</th><th>Correct</th><th>Incorrect</th><th>Percentage</th></tr></thead>";
+	tbl.style.width = "1000px";
+	tbl.style.border = "1px solid black";
 
-// 		for (let j = 0; j < 7; j++) {
-// 			const td = tr.insertCell();
-// 			td.appendChild(document.createTextNode(` ${i}${j}`));
-// 			td.style.border = "1px solid black";
-// 		}
-// 	}
-// 	body.appendChild(tbl);
-// }
+	Object.keys(cardsData).forEach((category) => {
+		cardsData[category].forEach((wordObj, i) => {
+			const tr = tbl.insertRow();
+			tr.style.border = "1px solid black";
+			for (let j = 0; j < 7; j++) {
+				const td = tr.insertCell();
 
-// const statTable = (categoryName, cardName, cardNameRu, trainedNumber, correctNumber, imcorrectNumber, percentage) => {
-// 	`<div class="statTable">
-//     <button>Repeat difficult words</button>
-//     <button>Reset</button>
-//       <table>
-//       <thead>
-//       <tr>
-//       <th>Word</th>
-//       <th>Translation</th>
-//       <th>Category</th>
-//       <th>Attempts</th>
-//       <th>Correct</th>
-//       <th>Incorrect</th>
-//       <th>Percentage</th>
-//       </tr>
-//       </thead>
-//       </table>
-//       $ {tableCreate()};
-//     </div>
-//     `;
-// };
+				if (j === 0) {
+					td.appendChild(document.createTextNode(category));
+				}
+
+				if (j === 1) {
+					td.appendChild(document.createTextNode(wordObj.cardName));
+				}
+				if (j === 2) {
+					td.appendChild(document.createTextNode(wordObj.cardNameRu));
+				}
+
+				if (j === 3) {
+					td.appendChild(document.createTextNode(wordObj.attempts));
+				}
+
+				if (j === 4) {
+					td.appendChild(document.createTextNode(wordObj.correct));
+				}
+				if (j === 5) {
+					td.appendChild(document.createTextNode(wordObj.incorrect));
+				}
+				if (j === 6) {
+					const percentage = (wordObj.correct / wordObj.attempts) * 100 + "%";
+
+					const text = isNaN(percentage) ? 0 : percentage
+					td.appendChild(document.createTextNode(text));
+				}
+
+				td.style.border = "1px solid black";
+			}
+		});
+	});
+
+	container.appendChild(tbl);
+}
+
+
+

@@ -6,6 +6,9 @@ export const cardsData = {
 			cardNameRu: "капуста",
 			img: "./assets/Vegetables/cabbage.jpg",
 			audio: "./assets/pronounciation/cabbage.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 1,
@@ -13,6 +16,9 @@ export const cardsData = {
 			cardNameRu: "морковка",
 			img: "./assets/Vegetables/carrot.jpg",
 			audio: "./assets/pronounciation/carrot.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 2,
@@ -20,6 +26,9 @@ export const cardsData = {
 			cardNameRu: "огурец",
 			img: "./assets/Vegetables/cucumber.jpg",
 			audio: "./assets/pronounciation/cucumber.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 3,
@@ -27,6 +36,9 @@ export const cardsData = {
 			cardNameRu: "лук",
 			img: "./assets/Vegetables/onion.jpg",
 			audio: "./assets/pronounciation/onion.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 4,
@@ -34,6 +46,9 @@ export const cardsData = {
 			cardNameRu: "перец",
 			img: "./assets/Vegetables/pepper.jpg",
 			audio: "./assets/pronounciation/pepper.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 5,
@@ -41,6 +56,9 @@ export const cardsData = {
 			cardNameRu: "помидор",
 			img: "./assets/Vegetables/tomato.jpg",
 			audio: "./assets/pronounciation/tomato.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 6,
@@ -48,6 +66,9 @@ export const cardsData = {
 			cardNameRu: "цукини",
 			img: "./assets/Vegetables/zucchini.jpg",
 			audio: "./assets/pronounciation/zucchini.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 7,
@@ -55,6 +76,9 @@ export const cardsData = {
 			cardNameRu: "картофель",
 			img: "./assets/Vegetables/potato.jpg",
 			audio: "./assets/pronounciation/potato.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 	],
 
@@ -66,6 +90,9 @@ export const cardsData = {
 			cardNameRu: "яблоко",
 			img: "./assets/Fruits/apple.jpg",
 			audio: "./assets/pronounciation/apple.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 9,
@@ -73,6 +100,9 @@ export const cardsData = {
 			cardNameRu: "банан",
 			img: "./assets/Fruits/banana.jpg",
 			audio: "./assets/pronounciation/banana.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 10,
@@ -80,6 +110,9 @@ export const cardsData = {
 			cardNameRu: "виноград",
 			img: "./assets/Fruits/grapes.jpg",
 			audio: "./assets/pronounciation/grapes.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 11,
@@ -87,6 +120,9 @@ export const cardsData = {
 			cardNameRu: "лимон",
 			img: "./assets/Fruits/lemon.jpg",
 			audio: "./assets/pronounciation/lemon.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 12,
@@ -94,6 +130,9 @@ export const cardsData = {
 			cardNameRu: "апельсин",
 			img: "./assets/Fruits/orange.jpg",
 			audio: "./assets/pronounciation/orange.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 13,
@@ -101,6 +140,9 @@ export const cardsData = {
 			cardNameRu: "персик",
 			img: "./assets/Fruits/peach.jpg",
 			audio: "./assets/pronounciation/peach.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 14,
@@ -108,6 +150,9 @@ export const cardsData = {
 			cardNameRu: "груша",
 			img: "./assets/Fruits/pear.jpg",
 			audio: "./assets/pronounciation/pear.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 15,
@@ -115,6 +160,9 @@ export const cardsData = {
 			cardNameRu: "ананас",
 			img: "./assets/Fruits/pineapple.jpg",
 			audio: "./assets/pronounciation/pineapple.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 	],
 
@@ -126,6 +174,9 @@ export const cardsData = {
 			cardNameRu: "осёл",
 			img: "./assets/Home_animals/donkey.jpg",
 			audio: "./assets/pronounciation/donkey.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 17,
@@ -133,6 +184,9 @@ export const cardsData = {
 			cardNameRu: "кошка",
 			img: "./assets/Home_animals/cat.jpg",
 			audio: "./assets/pronounciation/cat.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 18,
@@ -140,6 +194,9 @@ export const cardsData = {
 			cardNameRu: "корова",
 			img: "./assets/Home_animals/cow.jpg",
 			audio: "./assets/pronounciation/cow.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 19,
@@ -147,6 +204,9 @@ export const cardsData = {
 			cardNameRu: "коза",
 			img: "./assets/Home_animals/goat.jpg",
 			audio: "./assets/pronounciation/goat.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 20,
@@ -154,6 +214,9 @@ export const cardsData = {
 			cardNameRu: "кролик",
 			img: "./assets/Home_animals/rabbit.jpg",
 			audio: "./assets/pronounciation/rabbit.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 21,
@@ -161,6 +224,9 @@ export const cardsData = {
 			cardNameRu: "свинья",
 			img: "./assets/Home_animals/pig.jpg",
 			audio: "./assets/pronounciation/pig.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 22,
@@ -168,6 +234,9 @@ export const cardsData = {
 			cardNameRu: "овца",
 			img: "./assets/Home_animals/sheep.jpg",
 			audio: "./assets/pronounciation/sheep.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 23,
@@ -175,6 +244,9 @@ export const cardsData = {
 			cardNameRu: "лошадь",
 			img: "./assets/Home_animals/horse.jpg",
 			audio: "./assets/pronounciation/horse.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 	],
 
@@ -185,6 +257,9 @@ export const cardsData = {
 			cardNameRu: "медведь",
 			img: "./assets/Wild_animals/bear.jpg",
 			audio: "./assets/pronounciation/bear.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 25,
@@ -192,6 +267,9 @@ export const cardsData = {
 			cardNameRu: "обезьяна",
 			img: "./assets/Wild_animals/monkey.jpg",
 			audio: "./assets/pronounciation/monkey.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 26,
@@ -199,6 +277,9 @@ export const cardsData = {
 			cardNameRu: "тигр",
 			img: "./assets/Wild_animals/tiger.jpg",
 			audio: "./assets/pronounciation/tiger.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 27,
@@ -206,6 +287,9 @@ export const cardsData = {
 			cardNameRu: "лев",
 			img: "./assets/Wild_animals/lion.jpg",
 			audio: "./assets/pronounciation/lion.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 28,
@@ -213,6 +297,9 @@ export const cardsData = {
 			cardNameRu: "бегемот",
 			img: "./assets/Wild_animals/hippo.jpg",
 			audio: "./assets/pronounciation/hippo.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 29,
@@ -220,6 +307,9 @@ export const cardsData = {
 			cardNameRu: "лиса",
 			img: "./assets/Wild_animals/fox.jpg",
 			audio: "./assets/pronounciation/fox.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 30,
@@ -227,6 +317,9 @@ export const cardsData = {
 			cardNameRu: "слон",
 			img: "./assets/Wild_animals/elephant.jpg",
 			audio: "./assets/pronounciation/elephant.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 31,
@@ -234,6 +327,9 @@ export const cardsData = {
 			cardNameRu: "крокодил",
 			img: "./assets/Wild_animals/crocodile.jpg",
 			audio: "./assets/pronounciation/crocodile.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 	],
 	//      -----------------------------CLOTHES
@@ -244,6 +340,9 @@ export const cardsData = {
 			cardNameRu: "пальто",
 			img: "./assets/Clothes/coat.jpg",
 			audio: "./assets/pronounciation/coat.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 33,
@@ -251,6 +350,9 @@ export const cardsData = {
 			cardNameRu: "платье",
 			img: "./assets/Clothes/dress.jpg",
 			audio: "./assets/pronounciation/dress.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 34,
@@ -258,6 +360,9 @@ export const cardsData = {
 			cardNameRu: "шляпа",
 			img: "./assets/Clothes/hat.jpg",
 			audio: "./assets/pronounciation/hat.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 35,
@@ -265,6 +370,9 @@ export const cardsData = {
 			cardNameRu: "джинсы",
 			img: "./assets/Clothes/jeans.jpg",
 			audio: "./assets/pronounciation/jeans.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 36,
@@ -272,6 +380,9 @@ export const cardsData = {
 			cardNameRu: "рубашка",
 			img: "./assets/Clothes/shirt.jpg",
 			audio: "./assets/pronounciation/shirt.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 37,
@@ -279,6 +390,9 @@ export const cardsData = {
 			cardNameRu: "юбка",
 			img: "./assets/Clothes/skirt.jpg",
 			audio: "./assets/pronounciation/skirt.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 38,
@@ -287,6 +401,9 @@ export const cardsData = {
 			cardNameRu: "носки",
 			img: "./assets/Clothes/socks.jpg",
 			audio: "./assets/pronounciation/socks.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 39,
@@ -294,6 +411,9 @@ export const cardsData = {
 			cardNameRu: "футболка",
 			img: "./assets/Clothes/t-shirt.jpg",
 			audio: "./assets/pronounciation/socks.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 	],
 	// //  -------------------WEATHER
@@ -304,6 +424,9 @@ export const cardsData = {
 			cardNameRu: "облако",
 			img: "./assets/Weather/cloud.jpg",
 			audio: "./assets/pronounciation/cloud.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 41,
@@ -311,6 +434,9 @@ export const cardsData = {
 			cardNameRu: "туман",
 			img: "./assets/Weather/fog.jpg",
 			audio: "./assets/pronounciation/fog.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 42,
@@ -318,6 +444,9 @@ export const cardsData = {
 			cardNameRu: "молния",
 			img: "./assets/Weather/lightening.jpg",
 			audio: "./assets/pronounciation/lightening.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 43,
@@ -325,6 +454,9 @@ export const cardsData = {
 			cardNameRu: "дождь",
 			img: "./assets/Weather/rain.jpg",
 			audio: "./assets/pronounciation/rain.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 44,
@@ -332,6 +464,9 @@ export const cardsData = {
 			cardNameRu: "радуга",
 			img: "./assets/Weather/rainbow.jpg",
 			audio: "./assets/pronounciation/rainbow.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 45,
@@ -339,6 +474,9 @@ export const cardsData = {
 			cardNameRu: "снег",
 			img: "./assets/Weather/snow.jpg",
 			audio: "./assets/pronounciation/snow.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 46,
@@ -346,6 +484,9 @@ export const cardsData = {
 			cardNameRu: "солнце",
 			img: "./assets/Weather/sun.jpg",
 			audio: "./assets/pronounciation/sun.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 47,
@@ -353,6 +494,9 @@ export const cardsData = {
 			cardNameRu: "дождь",
 			img: "./assets/Weather/wind.jpg",
 			audio: "./assets/pronounciation/wind.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 	],
 	// // ----------------------PROFESSIONS
@@ -363,6 +507,9 @@ export const cardsData = {
 			cardNameRu: "повар",
 			img: "./assets/Professions/cook.jpg",
 			audio: "./assets/pronounciation/cook.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 49,
@@ -370,6 +517,9 @@ export const cardsData = {
 			cardNameRu: "доктор",
 			img: "./assets/Professions/doctor.jpg",
 			audio: "./assets/pronounciation/doctor.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 50,
@@ -377,6 +527,9 @@ export const cardsData = {
 			cardNameRu: "инженер",
 			img: "./assets/Professions/engineer.jpg",
 			audio: "./assets/pronounciation/engineer.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 51,
@@ -384,6 +537,9 @@ export const cardsData = {
 			cardNameRu: "пожарный",
 			img: "./assets/Professions/fireman.jpg",
 			audio: "./assets/pronounciation/fireman.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 52,
@@ -391,6 +547,9 @@ export const cardsData = {
 			cardNameRu: "парикмахер",
 			img: "./assets/Professions/hairdresser.jpg",
 			audio: "./assets/pronounciation/hairdresser.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 53,
@@ -398,6 +557,9 @@ export const cardsData = {
 			cardNameRu: "полицейский",
 			img: "./assets/Professions/police_officer.jpg",
 			audio: "./assets/pronounciation/police_officer.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 54,
@@ -405,6 +567,9 @@ export const cardsData = {
 			cardNameRu: "программист",
 			img: "./assets/Professions/programmer.jpg",
 			audio: "./assets/pronounciation/programmer.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 55,
@@ -412,6 +577,9 @@ export const cardsData = {
 			cardNameRu: "учитель",
 			img: "./assets/Professions/teacher.jpg",
 			audio: "./assets/pronounciation/teacher.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 	],
 	// // ------------------FOOD
@@ -422,6 +590,9 @@ export const cardsData = {
 			cardNameRu: "торт",
 			img: "./assets/Food/cake.jpg",
 			audio: "./assets/pronounciation/cake.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 57,
@@ -429,6 +600,9 @@ export const cardsData = {
 			cardNameRu: "яйца",
 			img: "./assets/Food/eggs.jpg",
 			audio: "./assets/pronounciation/eggs.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 58,
@@ -436,6 +610,9 @@ export const cardsData = {
 			cardNameRu: "гамбургер",
 			img: "./assets/Food/hamburger.jpg",
 			audio: "./assets/pronounciation/hamburger.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 59,
@@ -443,6 +620,9 @@ export const cardsData = {
 			cardNameRu: "паста",
 			img: "./assets/Food/pasta.jpg",
 			audio: "./assets/pronounciation/pasta.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 60,
@@ -450,6 +630,9 @@ export const cardsData = {
 			cardNameRu: "пицца",
 			img: "./assets/Food/pizza.jpg",
 			audio: "./assets/pronounciation/pizza.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 61,
@@ -457,6 +640,9 @@ export const cardsData = {
 			cardNameRu: "каша",
 			img: "./assets/Food/porridge.jpg",
 			audio: "./assets/pronounciation/porridge.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 62,
@@ -464,6 +650,9 @@ export const cardsData = {
 			cardNameRu: "салат",
 			img: "./assets/Food/salad.jpg",
 			audio: "./assets/pronounciation/salad.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 		{
 			id: 63,
@@ -471,6 +660,9 @@ export const cardsData = {
 			cardNameRu: "суп",
 			img: "./assets/Food/soup.jpg",
 			audio: "./assets/pronounciation/soup.mp3",
+			attempts: 0,
+			correct: 0,
+			incorrect: 0,
 		},
 	],
 };
